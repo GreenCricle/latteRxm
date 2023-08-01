@@ -13,6 +13,19 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
+factorial <- function() {
+  print("factorial <- function(n) {
+  if (n == 0 || n == 1) {
+    return(1)
+  } else {
+    return(n * factorial(n - 1))
+  }
+}
+
+
+num <- as.integer(readline(prompt = "enter a NUMBER"))
+
+result <- factorial(num)
+
+cat(result)")
 }
