@@ -13,19 +13,15 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-factorial <- function() {
-  print("factorial <- function(n) {
-  if (n == 0 || n == 1) {
-    return(1)
-  } else {
-    return(n * factorial(n - 1))
-  }
-}
-
-
-num <- as.integer(readline(prompt = "enter a NUMBER"))
-
-result <- factorial(num)
-
-cat(result)")
+print_factorial <- function() {
+  cat("factorial_function <- function(n) {\n")
+  cat("  if (n < 0) {\n")
+  cat("    stop(\"Factorial is not defined for negative numbers.\")\n")
+  cat("  }\n\n")
+  cat("  if (n == 0 || n == 1) {\n")
+  cat("    return(1)\n")
+  cat("  } else {\n")
+  cat("    return(n * factorial_function(n - 1))\n")
+  cat("  }\n")
+  cat("}\n")
 }
